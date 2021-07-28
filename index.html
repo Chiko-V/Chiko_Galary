@@ -1,28 +1,269 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My movies</title>
-    <link href="style.css" type="text/css" rel="stylesheet"/>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a class="navbar__logo" href="">Chiko</a></li>
-                <li><a href="">Log In</a></li>
-                <li><form id="form">
-                    <input type="text"placeholder="Search" class="search">
-                </form></li>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <nav class="navbar navbar-dark bg-primary py-3 px-5 mb-5">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="#">Chiko Galery</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">İletişim</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Galeri
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Son Eklenenler</a></li>
+                  <li><a class="dropdown-item" href="#">Güncel Galeri</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Atölyeden İşler</a></li>
+                </ul>
+              </li>
             </ul>
-        </nav>
-    </header>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Ara</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="section">
+        <div id="carouselExampleIndicators" class="carousel slide px-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://picsum.photos/id/155/1300/450"  alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/666/1300/450"  alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/299/1300/450" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+<div class="container  ">
+    <div class="card border border-2" style="width: 16rem; float: left; margin-right: 22px; margin-left: 18px;">
+        <div class="card-body">
+          <h5 class="card-title">Deniz</h5>
+          <h6 class="card-subtitle mb-2 text-muted">1500 TL</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <img src="https://picsum.photos/id/27/200/200" alt="">
+          <button type="button" class="btn btn-primary btn-sm my-2">İncele</button>
+        </div>
+      </div>
+
+      <div class="card border border-2" style="width: 16rem; float: left;margin-right: 22px;">
+        <div class="card-body">
+          <h5 class="card-title">Büyüleyici Şehir</h5>
+          <h6 class="card-subtitle mb-2 text-muted">1300 TL</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <img src="https://picsum.photos/id/257/200/200" alt="">
+          <button type="button" class="btn btn-primary btn-sm my-2">İncele</button>
+        </div>
+      </div>
+
+      <div class="card border border-2" style="width: 16rem; float: left;margin-right: 22px;">
+        <div class="card-body">
+          <h5 class="card-title">Yeşillik</h5>
+          <h6 class="card-subtitle mb-2 text-muted">1800 TL</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <img src="https://picsum.photos/id/287/200/200" alt="">
+          <button type="button" class="btn btn-primary btn-sm my-2">İncele</button>
+        </div>
+      </div>
+
+      <div class="card border border-2" style="width: 16rem; float: left;margin-right: 22px;">
+        <div class="card-body">
+          <h5 class="card-title">Yalnızlık</h5>
+          <h6 class="card-subtitle mb-2 text-muted">1000 TL</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <img src="https://picsum.photos/id/87/200/200" alt="">
+          <button type="button" class="btn btn-primary btn-sm my-2">İncele</button>
+        </div>
+      </div>
+      
+      <div class="card border border-2" style="width: 16rem; float: left;margin-right: 22px; margin-left: 18px;">
+        <div class="card-body">
+          <h5 class="card-title">Ahşap</h5>
+          <h6 class="card-subtitle mb-2 text-muted">1500 TL</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <img src="https://picsum.photos/id/217/200/200" alt="">
+          <button type="button" class="btn btn-primary btn-sm my-2">İncele</button>
+        </div>
+      </div>
+
+      <div class="card border border-2" style="width: 16rem; float: left;margin-right: 22px; ">
+        <div class="card-body">
+          <h5 class="card-title">Bahar</h5>
+          <h6 class="card-subtitle mb-2 text-muted">1200 TL</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <img src="https://picsum.photos/id/487/200/200" alt="">
+          <button type="button" class="btn btn-primary btn-sm my-2">İncele</button>
+        </div>
+      </div>
+
+      <div class="card border border-2" style="width: 16rem; float: left;margin-right: 22px;">
+        <div class="card-body">
+          <h5 class="card-title">Yaşam</h5>
+          <h6 class="card-subtitle mb-2 text-muted">1100 TL</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <img src="https://picsum.photos/id/397/200/200" alt="">
+          <button type="button" class="btn btn-primary btn-sm my-2">İncele</button>
+        </div>
+      </div>
+
+      <div class="card border border-2" style="width: 16rem; float: left;margin-right: 22px;">
+        <div class="card-body">
+          <h5 class="card-title">Bir Kare</h5>
+          <h6 class="card-subtitle mb-2 text-muted">800 TL</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <img src="https://picsum.photos/id/157/200/200" alt="">
+          <button type="button" class="btn btn-primary btn-sm my-2">İncele</button>
+        </div>
+      </div>
+
+      <div class="card border border-2" style="width: 16rem; float: left;margin-right: 22px; margin-left: 18px; ">
+        <div class="card-body">
+          <h5 class="card-title">Yolculuk</h5>
+          <h6 class="card-subtitle mb-2 text-muted">1500 TL</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <img src="https://picsum.photos/id/667/200/200" alt="">
+          <button type="button" class="btn btn-primary btn-sm my-2">İncele</button>
+        </div>
+      </div>
+
+      <div class="card border border-2" style="width: 16rem; float: left;margin-right: 22px;">
+        <div class="card-body">
+          <h5 class="card-title">Doğa</h5>
+          <h6 class="card-subtitle mb-2 text-muted">1200 TL</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <img src="https://picsum.photos/id/977/200/200" alt="">
+          <button type="button" class="btn btn-primary btn-sm my-2">İncele</button>
+        </div>
+      </div>
 
 
-</body>
+      <div class="card border border-2" style="width: 16rem; float: left;margin-right: 22px;">
+        <div class="card-body">
+          <h5 class="card-title">Huzur</h5>
+          <h6 class="card-subtitle mb-2 text-muted">1000 TL</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <img src="https://picsum.photos/id/907/200/200" alt="">
+          <button type="button" class="btn btn-primary btn-sm my-2">İncele</button>
+        </div>
+      </div>
+
+      <div class="card border border-2" style="width: 16rem; float: left;margin-right: 22px;">
+        <div class="card-body">
+          <h5 class="card-title">Orman</h5>
+          <h6 class="card-subtitle mb-2 text-muted">1300 TL</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <img src="https://picsum.photos/id/877/200/200" alt="">
+          <button type="button" class="btn btn-primary btn-sm my-2">İncele</button>
+        </div>
+      </div>
+
+      </div>
+
+</div>
+<br>
+<hr>
+<div class="text">
+    <div class="mb-3" >
+        <label for="exampleFormControlInput1" class="form-label py-3 px-5 h5" >Mail Adresi</label>
+        <input type="email" class="form-control px-5 bg-light " id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label py-3 px-5 h5 ">Metin Alanı</label>
+        <textarea class="form-control bg-light px-5" id="exampleFormControlTextarea1" placeholder='Metin Ekle' rows="3"></textarea>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4">
+
+    <!-- Footer Elements -->
+    <div class="containers py-3 px-5">
+  
+        <!--Grid row-->
+        <div class="row">
+    
+            <!--Grid column-->
+            <div class="col-md-4 mb-4 ">
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-md-4">
+                <form class="input-group">
+                    <input type="text" class="form-control form-control-sm" placeholder="Mail Adresi"
+                    aria-label="Mail Adresi" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                    <button class="btn btn-sm btn-outline-white my-0" type="button">Giriş Yap</button>
+                    </div>
+                </form>
+    
+            </div>
+            <!--Grid column-->
+    
+        </div>
+        <!--Grid row-->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="vcimnaz@gmail.com"> Chiko-Galary</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+  </body>
 </html>
