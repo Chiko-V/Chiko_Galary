@@ -1,69 +1,21 @@
-
-*{
-    box-sizing: border-box;
+.navbar-brand{
+    font-size: 25px;
+    font-family: italic;
+ 
 }
 
-
-
-.navbar{
-    height: 100px;
-    width: auto ;
-    background-color: rgb(6, 68, 119);
-    padding: 30px;
-    margin-left: 90px;
-    margin-right: 90px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-    .navbar__logo{
-        font-weight: bold;
-        font-size: 30px;
-        
-    }
-
-ul{
-    list-style: none;
-    color: rgb(243, 227, 227);
-}
-
-li{
-    font-size: 20px;
-    float: left;
-    margin-left: 50px;
-    margin-right: 70px;
-}
-
-a{
-    color: floralwhite;
-    text-decoration: none;
-}
-
-.search{
-    border-radius: 50px;
-    background-color: rgb(242, 242, 248);
-    color:rgb(6, 2, 39);
-    width: 160px;
-    height: 25px;
-    text-align: center;
-   
-}
-
-.search:focus{
-    background-color: rgba(145, 171, 206, 0.918);
-}
-
-section{
-    width: 250px;
-    height: 550px;
-    background-color: rgb(6, 68, 119);
-    color: floralwhite;
-    margin-left: 40px;
+.container{
     margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    width: auto;
+    height: 1250px;
+    align-items: center;
+    padding: 5px;
+    padding-top: 20px;
+    background-color: rgb(42, 104, 219);
 }
 
-   
+.text{
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: darkgray;
+}
